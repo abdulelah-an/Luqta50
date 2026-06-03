@@ -2,24 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { categories, formatSar, getCategoryBySlug, getProductsByCategoryAndBudget } from "@/lib/data";
 
 type PricePageProps = {
   params: Promise<{ slug: string }>;
 };
 
 function parsePriceSlug(slug: string) {
-  const match = slug.match(/^(.+)-(\d+)-sar$/);
-
-  if (!match) {
-    return null;
-  }
-
-  const [, categorySlug, budget] = match;
-
-  return {
-    categorySlug,
-    budget: Number(budget),
+> main
   };
 }
 
